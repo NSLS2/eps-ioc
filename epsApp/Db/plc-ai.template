@@ -1,0 +1,26 @@
+#
+# Generic analog input record for multi-use
+#
+
+record(ai, "$(Sys){$(Dev)}$(Sig)") {
+    field(DESC, "$(DESC)")
+    field(SCAN, "I/O Intr")
+    field(DTYP, "EtherIP")
+    field(INP,  "@$(PLC) $(Tag) S $(Rate=1)")
+    field(LINR, "SLOPE")
+    field(ESLO, "$(ESLO)")
+    field(EGU,  "$(EGU)")
+    field(PREC, "$(PREC=3)")
+    field(EOFF, "$(EOFF=0)")
+    field(AOFF, "$(AOFF=0)")
+    field(LOW,  "$(LOW=)")
+    field(LOLO, "$(LOLO=)")
+    field(LSV,  "$(LSV=)")
+    field(LLSV, "$(LLSV=)")
+    field(HIGH, "$(HIGH=)")
+    field(HIHI, "$(HIHI=)")
+    field(HSV,  "$(HSV=)")
+    field(HHSV, "$(HHSV=)")
+    field(HYST, "$(HYST=)")
+}
+
