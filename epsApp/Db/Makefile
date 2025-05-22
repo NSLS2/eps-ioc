@@ -19,6 +19,9 @@ DB += plc-tc.template
 DB += plc-va-gv.template
 DB += plc-va-rly.template
 
+DB_INSTALLS += $(EPICS_BASE)/db/iocAdminSoft.db
+DB_INSTALLS += $(EPICS_BASE)/db/save_restoreStatus.db
+DB_INSTALLS += $(EPICS_BASE)/db/reccaster.db
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
 # <anyname>_template = <templatename>
