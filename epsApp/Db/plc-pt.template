@@ -7,7 +7,7 @@
 #
 
 record(ai, "$(Sys){$(Dev)}P-I") {
-    field(DESC, "Pressure reading")
+    field(DESC, "$(DESC=Pressure Reading)")
     field(SCAN, "I/O Intr")
     field(DTYP, "EtherIP")
     field(INP,  "@$(PLC) P_I_$(Seq)[$(ArrNum)] S 1")

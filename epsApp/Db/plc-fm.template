@@ -7,7 +7,7 @@
 #
 
 record(ai, "$(Sys){$(Dev)}F-I") {
-    field(DESC, "Water flow reading")
+    field(DESC, "$(DESC=Flow Meter Reading)")
     field(SCAN, "I/O Intr")
     field(DTYP, "EtherIP")
     field(INP,  "@$(PLC) F_I_$(Seq)[$(ArrNum)] S 1")
