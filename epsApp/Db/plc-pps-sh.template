@@ -128,6 +128,7 @@ record(bo, "$(Sys){$(Dev)}Cmd:Opn-Cmd") {
     field(OUT,  "@$(PLC) $(ShTag)_ReqOpnCmd S 0.5")
     field(ZNAM, "None")
     field(ONAM, "Open")
+    field(ASG,  "EPSEXPERT")
 }
 
 # Old record for SH open commands
@@ -149,6 +150,7 @@ record(bo, "$(Sys){$(Dev)}Cmd:Cls-Cmd") {
     field(OUT,  "@$(PLC) $(ShTag)_ReqClsCmd S 0.5")
     field(ZNAM, "None")
     field(ONAM, "Close")
+    field(ASG,  "EPSEXPERT")
 }
 
 # Old record for SH close commands
@@ -189,6 +191,7 @@ record(bo, "$(Sys){$(Dev)}Intlk:Ack-Sel") {
     field(OUT,  "@$(PLC) $(ShTag)_IntlkAck S 0.5")
     field(ZNAM, "Unacknowledge")
     field(ONAM, "Acknowledge")
+    field(ASG,  "EPSEXPERT")
 }
 
 record(bi, "$(Sys){$(Dev)}Intlk:Ack-Sts") {
@@ -209,6 +212,7 @@ record(bo, "$(Sys){$(Dev)}Mode:Auto-Sel") {
     field(OUT,  "@$(PLC) $(ShTag)_Cmd.AutoMd S 0.5")
     field(ZNAM, "Disable")
     field(ONAM, "Enable")
+    field(ASG,  "EPSEXPERT")
 }
 
 record(bi, "$(Sys){$(Dev)}Mode:Auto-Sts") {
@@ -228,6 +232,7 @@ record(bo, "$(Sys){$(Dev)}Mode:LocalOpn-Sel") {
     field(OUT,  "@$(PLC) $(ShTag)_Cmd.LocalOpnMd S 0.5")
     field(ZNAM, "Disable")
     field(ONAM, "Enable")
+    field(ASG,  "EPSEXPERT")
 }
 
 record(bi, "$(Sys){$(Dev)}Mode:LocalOpn-Sts") {
@@ -246,6 +251,7 @@ record(bo, "$(Sys){$(Dev)}Mode:LocalCls-Sel") {
     field(OUT,  "@$(PLC) $(ShTag)_Cmd.LocalClsMd S 0.5")
     field(ZNAM, "Disable")
     field(ONAM, "Enable")
+    field(ASG,  "EPSEXPERT")
 }
 
 record(bi, "$(Sys){$(Dev)}Mode:LocalCls-Sts") {
